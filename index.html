@@ -20,10 +20,10 @@
 
 <h2>4. 광고 SDK가 처리하는 정보 (행태정보 포함)</h2>
 <ul>
-<li><strong>처리 항목:</strong> 광고 ID 등 기기 식별자, IP 주소, IP로 추정한 대략적인 위치, 앱·광고 이용 기록(광고 노출·클릭 등), 기기 정보, 오류 진단 정보</li>
+<li><strong>처리 항목:</strong> 광고 ID 등 기기 식별자, IP 주소, IP로 추정한 대략적인 위치, 앱·광고 이용 기록(광고 노출·클릭 등), 기기 정보, 오류 진단 정보. 앱은 위치 권한을 요청하지 않으므로 GPS 등 기기의 정밀 위치에는 접근하지 않습니다.</li>
 <li><strong>수집 방법:</strong> 앱에서 광고를 요청하거나 표시할 때 Google 광고 SDK가 자동으로 수집합니다.</li>
 <li><strong>목적:</strong> 광고 제공(동의한 경우 맞춤형 광고), 광고 성과 측정, 오류 진단, 부정 이용 방지</li>
-<li><strong>처리하는 곳:</strong> Google LLC. 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites">Google 서비스를 사용하는 앱의 데이터 처리 방식</a>을 참고하세요.</li>
+<li><strong>처리하는 곳:</strong> Google LLC 및 동의 화면의 "파트너 목록(List of partners)"에 표시되는 광고 파트너. 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites">Google 서비스를 사용하는 앱의 데이터 처리 방식</a>을 참고하세요.</li>
 <li><strong>거부 방법:</strong> 앱의 개인정보 선택 변경에서 맞춤형 광고 동의를 철회하거나, Android 설정의 광고(광고 ID) 메뉴에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 메뉴 이름과 위치는 기기마다 다를 수 있습니다.</li>
 </ul>
 <p>실제 처리 항목은 SDK 버전, 기기, 지역, 이용자의 선택에 따라 달라집니다. 비맞춤형 광고도 광고 제공·측정·부정 이용 방지를 위한 정보 처리는 이루어집니다.</p>
@@ -37,8 +37,8 @@
 
 <h2>6. 개인정보의 국외 이전</h2>
 <ul>
-<li><strong>이전받는 자:</strong> Google LLC (연락처: <a href="https://support.google.com/policies/contact/general_privacy_form">Google 개인정보 문의</a>)</li>
-<li><strong>이전되는 국가:</strong> 미국 및 Google이 데이터 센터를 운영하는 국가</li>
+<li><strong>이전받는 자:</strong> Google LLC (연락처: <a href="https://support.google.com/policies/contact/general_privacy_form">Google 개인정보 문의</a>) 및 동의 화면의 파트너 목록에 표시되는 광고 파트너</li>
+<li><strong>이전되는 국가:</strong> 미국 및 Google·광고 파트너가 데이터를 처리하는 국가</li>
 <li><strong>이전 항목:</strong> 4항의 처리 항목</li>
 <li><strong>이전 시기와 방법:</strong> 앱에서 광고를 요청하거나 표시할 때 네트워크를 통해 전송</li>
 <li><strong>이전 목적과 보유 기간:</strong> 4항의 목적. 보유 기간은 Google 보관 정책에 따릅니다.</li>
@@ -95,10 +95,10 @@
 
 <h2>4. Information processed by the advertising SDK</h2>
 <ul>
-<li><strong>Data:</strong> device identifiers such as the advertising ID, IP address, approximate location derived from IP, app and ad interactions (such as impressions and clicks), device information, and diagnostics</li>
+<li><strong>Data:</strong> device identifiers such as the advertising ID, IP address, approximate location derived from IP, app and ad interactions (such as impressions and clicks), device information, and diagnostics. The app does not request location permission, so it does not access precise device location such as GPS.</li>
 <li><strong>How:</strong> collected automatically by the Google Mobile Ads SDK when the app requests or shows an ad</li>
 <li><strong>Purposes:</strong> serving ads (personalized ads only with consent where required), measuring ad performance, troubleshooting, and preventing fraud</li>
-<li><strong>Recipient:</strong> Google LLC. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>.</li>
+<li><strong>Recipients:</strong> Google LLC and the advertising partners shown in the consent form's "List of partners". See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites or apps that use its services</a>.</li>
 <li><strong>How to opt out:</strong> withdraw consent for personalized ads in the app's privacy choices, or reset or delete your advertising ID in Android's Ads (advertising ID) settings. Menu names and locations vary by device.</li>
 </ul>
 <p>Exact processing depends on the SDK version, device, region, and your choices. Non-personalized ads still involve processing for ad delivery, measurement, and fraud prevention.</p>
@@ -111,7 +111,7 @@
 </ul>
 
 <h2>6. International transfers</h2>
-<p>Advertising data described in section 4 is transferred to Google LLC and may be processed in the United States and other countries where Google operates data centers. It is sent over the network when the app requests or shows an ad, and retained according to Google's policies. Transfers from the EEA, the UK, and Switzerland rely on the safeguards Google applies, such as Standard Contractual Clauses; see <a href="https://policies.google.com/privacy/frameworks">Google's data transfer frameworks</a>. You can refuse personalized advertising in the app's privacy choices without any limit on gameplay.</p>
+<p>Advertising data described in section 4 is transferred to Google LLC and to the advertising partners listed in the consent form, and may be processed in the United States and other countries where Google and those partners process data. It is sent over the network when the app requests or shows an ad, and retained according to Google's policies. Transfers from the EEA, the UK, and Switzerland rely on the safeguards Google applies, such as Standard Contractual Clauses; see <a href="https://policies.google.com/privacy/frameworks">Google's data transfer frameworks</a>. You can refuse personalized advertising in the app's privacy choices without any limit on gameplay.</p>
 
 <h2>7. Retention</h2>
 <ul>
